@@ -13,6 +13,8 @@ The two left motors are connected to victors on ports 1 and 3
 The two right motors are connected for victors on ports 2 and 4
 *****************************************************************************/
 
+//Test for GIT.  This should be commit #2
+//TEST : git from NEtbeans. Clone repo.
 public class RobotMain extends IterativeRobot {
 
     final static int ARCADE = 1;
@@ -63,7 +65,7 @@ public class RobotMain extends IterativeRobot {
     public void teleopPeriodic() {
         // feed the watchdog
         Watchdog.getInstance().feed();
-DO REALLY AWESOME STUFF HERE!!!!
+
         normalDrive();
         //publicDrive();
         
