@@ -17,6 +17,10 @@ public class RobotMain extends IterativeRobot {
 
     final static int ARCADE = 1;
     final static int TANK = 2;
+    
+    //for LCD display
+    static final int BUS_NO = 1;
+	static final int BUS_ADDRESS = 0x20;
 
     //create object references
     Joystick leftStick, rightStick;
@@ -29,6 +33,7 @@ public class RobotMain extends IterativeRobot {
 
     //global variables
     private int driveState = ARCADE;
+    
 
     //create global objects here
     public void robotInit() {
@@ -54,10 +59,18 @@ public class RobotMain extends IterativeRobot {
         //stickLBtn1 = new JoystickButton(stickL, 1);
         //stickLBtn2 = new JoystickButton(stickL, 2);
         limitSwitch = new DigitalInput(5);
+        
+        //for LCD display
+        Lcd lcd = new AdafruitLcdPlate(BUS_NO, BUS_ADDRESS);
     }
 
     public void teleopInit() {
         Watchdog.getInstance().feed();
+        
+        //for LCD display
+        lcd.write("Test test");
+		//Thread.sleep(5000);
+		//lcd.shutdown();
     }
 
     // called at 50Hz (every 20ms). This method must not take more than 20ms to complete!
