@@ -20,7 +20,7 @@ public class RobotMain extends IterativeRobot {
     
     //for LCD display
     static final int BUS_NO = 1;
-	static final int BUS_ADDRESS = 0x20;
+    static final int BUS_ADDRESS = 0x20;
 
     //create object references
     Joystick leftStick, rightStick;
