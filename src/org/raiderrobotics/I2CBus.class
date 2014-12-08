@@ -1,0 +1,6 @@
+Êþº¾   3    BUS_0 I 
+ConstantValue     BUS_1    	getDevice (I)Lcom/pi4j/io/i2c/I2CDevice; 
+Exceptions  close ()V 
+SourceFile I2CBus.java com/pi4j/io/i2c/I2CBus java/lang/Object java/io/IOException                         	 
+        
+              
