@@ -28,6 +28,9 @@ public class RobotMain extends IterativeRobot {
     Victor victor1, victor2, victor3, victor4;
     Jaguar jag1;
     DigitalInput limitSwitch;
+    
+    //for LCD display
+    Lcd lcd;
     //the JoystickButton class does not exist in our Java FRC plugins!
     // JoystickButton stickLBtn1, stickLBtn2; 
 
@@ -61,7 +64,7 @@ public class RobotMain extends IterativeRobot {
         limitSwitch = new DigitalInput(5);
         
         //for LCD display
-        Lcd lcd = new AdafruitLcdPlate(BUS_NO, BUS_ADDRESS);
+        lcd = new AdafruitLcdPlate(BUS_NO, BUS_ADDRESS);
     }
 
     public void teleopInit() {
