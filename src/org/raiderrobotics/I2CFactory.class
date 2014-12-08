@@ -1,0 +1,9 @@
+Êþº¾   3 
+  
+     <init> ()V Code LineNumberTable LocalVariableTable this Lcom/pi4j/io/i2c/I2CFactory; getInstance (I)Lcom/pi4j/io/i2c/I2CBus; 	busNumber I 
+Exceptions  
+SourceFile I2CFactory.java     
+ com/pi4j/io/i2c/I2CFactory java/lang/Object java/io/IOException com/pi4j/io/i2c/impl/I2CBusImpl getBus !               3     *· ±       
+    ,  . 	        
+    	  
+     /     ¸ °           8 	                       
