@@ -1,3 +1,5 @@
+
+
 /*----------------------------------------------------------------------------*/
 /* Copyright (c) FIRST 2008. All Rights Reserved.                             */
 /* Open Source Software - may be modified and shared by FRC teams. The code   */
@@ -7,6 +9,7 @@
 package org.raiderrobotics;
 
 import edu.wpi.first.wpilibj.*;
+import java.io.IOException;
 
 /***************************************************************************
 The two left motors are connected to victors on ports 1 and 3
